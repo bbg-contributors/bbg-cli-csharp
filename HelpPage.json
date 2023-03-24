@@ -1,0 +1,26 @@
+{
+    "zh-CN": [
+        "以下为用法列表。",
+        "CreateSite <SiteName> 在当前目录下新建名为 SiteName 的文件夹并创建新站点",
+        "CreateSite <Path> 在指定目录下创建新站点",
+        "CreateSite . 在当前目录下创建新站点",
+        "AddArticle <ArticleName> <ArticleDescription> [<Tag1>] [<Tag2>] [...] [<TagN>] 在当前站点下新建一篇标题为 ArticleName 、描述为 ArticleDescription、标签为 Tag1、Tag2、 ...、 TagN 的文章",
+        "ListArticles [<PageNumber|ShowAll>] 列出当前站点下的所有文章及它们的索引值，使用 ShowAll 可以一次性获取所有文章信息，或者使用 PageNumber 指定第几页。如果既不使用 PageNumber 指定页数也不使用 ShowAll 获取全部，则默认获取第一页的内容。",
+        "EditArticle <IndexValue> 编辑索引值为 IndexValue 的文章",
+        "DeleteArticle <IndexValue> 删除索引值为 IndexValue 的文章",
+        "SetArticleAttributes <IndexValue> <key>=<value> 修改索引值为 IndexValue 的文章的元信息，可以使用 AttributeKeysOfAnArticle 指令了解有哪些 key",
+        "SetArticleTags <IndexValue> [<Tag1>] [<Tag2>] [...] [<TagN>] 设置索引值为 IndexValue 的文章的标签，注意此指令会覆盖已有标签。如果调用此指令而不指定任何标签，将删除此文章的所有标签",
+        "AddArticleTags <IndexValue> [<Tag1>] [<Tag2>] [...] [<TagN>] 为索引值为 IndexValue 的文章添加标签，此指令不会覆盖已有标签。如果调用此指令时指定的某个或某些标签已经是该文章的标签，则不会再次添加它们。",
+        "ClearArticleTags <IndexValue> 清空索引值为 IndexValue 的文章的全部标签",
+        "ChangeArticleFilename <IndexValue> <NewFilename> 修改索引值为 IndexValue 的文章的文件名为 NewFilename，注意此处的 NewFilename 应当添加 .md 扩展名。如果 NewFileName 没有扩展名（或者扩展名不是 .md），则会自动在其内容后面添加一个 .md 扩展名。",
+        "AddPage <PageName> 在当前站点下新建一篇标题为 PageName 的页面",
+        "ListPages 列出当前站点下的所有页面及它们的索引值",
+        "EditPage <IndexValue> 编辑索引值为 IndexValue 的页面",
+        "DeletePage <IndexValue> 删除索引值为 IndexValue 的页面",
+        "SetPageAttributes <IndexValue> <key>=<value> 修改索引值为 IndexValue 的页面的元信息，可以使用 AttributeKeysOfAPage 指令了解有哪些 key",
+        "ListSiteAttributes 列出站点的所有可设置项及目前它们的值",
+        "SetSiteAttribute <key>=<value> 修改站点某个设置项的值",
+        "PreviewSite 预览当前站点",
+        "ShowSiteAttribute <key> 获取站点的某个特定属性值"
+    ]
+}
